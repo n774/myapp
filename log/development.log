@@ -1,0 +1,55 @@
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (31.4ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (6.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateAddresses (20130105053636)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "addresses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130105053636')[0m
+  [1m[35m (14.5ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+
+
+Started GET "/addresses/" for 127.0.0.1 at 2013-01-04 21:37:23 -0800
+Connecting to database specified by database.yml
+Processing by AddressesController#index as HTML
+  [1m[36mAddress Load (0.1ms)[0m  [1mSELECT "addresses".* FROM "addresses" [0m
+  Rendered addresses/index.html.erb within layouts/application (3.2ms)
+Compiled addresses.css  (28ms)  (pid 4472)
+Compiled scaffolds.css  (11ms)  (pid 4472)
+Compiled application.css  (59ms)  (pid 4472)
+Compiled jquery.js  (1ms)  (pid 4472)
+Compiled jquery_ujs.js  (0ms)  (pid 4472)
+Compiled addresses.js  (660ms)  (pid 4472)
+Compiled application.js  (707ms)  (pid 4472)
+Completed 200 OK in 1095ms (Views: 968.4ms | ActiveRecord: 17.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-04 21:37:24 -0800
+Served asset /application.css - 200 OK (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-04 21:37:24 -0800
+Served asset /jquery_ujs.js - 200 OK (8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-04 21:37:24 -0800
+Served asset /jquery.js - 200 OK (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-01-04 21:37:25 -0800
+Served asset /scaffolds.css - 200 OK (11ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 127.0.0.1 at 2013-01-04 21:37:25 -0800
+Served asset /addresses.js - 200 OK (1ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 127.0.0.1 at 2013-01-04 21:37:25 -0800
+Served asset /addresses.css - 200 OK (5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-04 21:37:25 -0800
+Served asset /application.js - 200 OK (14ms)
