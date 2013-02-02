@@ -14,9 +14,9 @@
 
 <% @rates.each do |rate| %>
   <tr>
-    <td><%= rate.groupid %></td>
-    <td><%= rate.rateid %></td>
-    <td><%= rate.brateid %></td>
+    <td><%= rate.g_id %></td>
+    <td><%= rate.rate_id %></td>
+    <td><%= rate.brate_id %></td>
     <td><%= rate.point %></td>
     <td><%= rate.comment %></td>
     <td><%= link_to 'Edit', edit_rate_path(rate) %></td>

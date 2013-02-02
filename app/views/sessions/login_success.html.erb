@@ -5,12 +5,12 @@
 
 <p>
 先生用（管理者）<br>
-<%= link_to '生徒用', rates_path , :userid => @login["userid"] %>
+<%= link_to '生徒用', rates_path , :userid => @login["u_id"] %>
 </p>
 
 <p>
 name test:
-<%= @login["groupid"] %>
+<%= @login["g_id"] %>
 </p>
 
 <%= link_to 'ログアウトする', sessions_path, :confirm => 'ログアウトしますか？' %>
