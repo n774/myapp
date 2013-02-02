@@ -1,0 +1,16 @@
+<h1>ログイン成功</h1>
+<p>
+ログイン成功しました。
+</p>
+
+<p>
+先生用（管理者）<br>
+生徒用
+</p>
+
+<p>
+name test:
+<%= @login["name"] %>
+</p>
+
+<%= link_to 'ログアウトする', sessions_path, :confirm => 'ログアウトしますか？', :method => :delete %>

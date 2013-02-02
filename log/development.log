@@ -739,3 +739,481 @@ Served asset /addresses.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-12 17:56:28 +0900
 Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/a" for 127.0.0.1 at 2013-02-02 11:33:22 +0900
+Connecting to database specified by database.yml
+
+ActionController::RoutingError (No route matches [GET] "/a"):
+  actionpack (3.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.10) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.10) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.10) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.10) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.10) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.10) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.10) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.10) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.10) lib/rails/engine.rb:479:in `call'
+  railties (3.2.10) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.10) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (5.4ms)
+
+
+Started GET "/addresses/" for 127.0.0.1 at 2013-02-02 11:33:24 +0900
+Processing by AddressesController#index as HTML
+  [1m[36mAddress Load (0.1ms)[0m  [1mSELECT "addresses".* FROM "addresses" [0m
+  Rendered addresses/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 279ms (Views: 194.1ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-02 11:33:25 +0900
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 127.0.0.1 at 2013-02-02 11:33:25 +0900
+Served asset /addresses.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 127.0.0.1 at 2013-02-02 11:33:25 +0900
+Served asset /addresses.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-02 11:33:25 +0900
+Served asset /jquery_ujs.js - 200 OK (7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-02 11:33:25 +0900
+Served asset /jquery.js - 200 OK (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-02 11:33:25 +0900
+Served asset /scaffolds.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-02 11:33:25 +0900
+Served asset /application.js - 304 Not Modified (24ms)
+
+
+Started GET "/addresses/1/edit" for 127.0.0.1 at 2013-02-02 11:33:28 +0900
+Processing by AddressesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAddress Load (0.2ms)[0m  SELECT "addresses".* FROM "addresses" WHERE "addresses"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered addresses/_form.html.erb (61.2ms)
+  Rendered addresses/edit.html.erb within layouts/application (101.8ms)
+Completed 200 OK in 256ms (Views: 253.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-02 11:33:29 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 127.0.0.1 at 2013-02-02 11:33:29 +0900
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 127.0.0.1 at 2013-02-02 11:33:29 +0900
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-02 11:33:29 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-02 11:33:29 +0900
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-02 11:33:29 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-02 11:33:29 +0900
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/addresses/1" for 127.0.0.1 at 2013-02-02 11:33:32 +0900
+Processing by AddressesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAddress Load (0.1ms)[0m  [1mSELECT "addresses".* FROM "addresses" WHERE "addresses"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered addresses/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-02 11:33:32 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-02 11:33:32 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-02 11:33:32 +0900
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-02 11:33:32 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 127.0.0.1 at 2013-02-02 11:33:32 +0900
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-02 11:33:32 +0900
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 127.0.0.1 at 2013-02-02 11:33:32 +0900
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/addresses" for 127.0.0.1 at 2013-02-02 11:33:41 +0900
+Processing by AddressesController#index as HTML
+  [1m[35mAddress Load (0.3ms)[0m  SELECT "addresses".* FROM "addresses" 
+  Rendered addresses/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-02 11:33:41 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 127.0.0.1 at 2013-02-02 11:33:41 +0900
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-02 11:33:41 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-02 11:33:41 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-02 11:33:41 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 127.0.0.1 at 2013-02-02 11:33:41 +0900
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-02 11:33:41 +0900
+Served asset /application.js - 304 Not Modified (1ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (29.5ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (5.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateRates (20130126090512)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "rates" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "g_id" varchar(255), "rate_id" varchar(255), "brate_id" varchar(255), "point" integer, "comment" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130126090512')[0m
+  [1m[35m (11.4ms)[0m  commit transaction
+Migrating to CreateUsers (20130126090519)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "u_id" varchar(255), "u_name" varchar(255), "g_id" varchar(255), "password_digest" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130126090519')[0m
+  [1m[35m (14.2ms)[0m  commit transaction
+Migrating to CreateGroups (20130126090525)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "groups" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "g_id" varchar(255), "g_name" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130126090525')[0m
+  [1m[35m (8.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+
+
+Started GET "/sessions/" for 127.0.0.1 at 2013-02-02 17:22:24 +0900
+Connecting to database specified by database.yml
+Processing by SessionsController#index as HTML
+  Rendered sessions/login.html.erb within layouts/application (19.2ms)
+Completed 200 OK in 217ms (Views: 216.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-02 17:22:24 +0900
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 127.0.0.1 at 2013-02-02 17:22:25 +0900
+Served asset /addresses.js - 200 OK (13ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-02 17:22:25 +0900
+Served asset /jquery_ujs.js - 200 OK (12ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-02 17:22:25 +0900
+Served asset /jquery.js - 200 OK (8ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-02 17:22:25 +0900
+Served asset /scaffolds.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 127.0.0.1 at 2013-02-02 17:22:25 +0900
+Served asset /addresses.css - 200 OK (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-02 17:22:25 +0900
+Served asset /application.js - 304 Not Modified (60ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2013-02-02 17:22:30 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HU8NEJNcwIpw1Y+X+MEVjOLa6163V7SDK2d3pW0bqc8=", "account"=>"", "pass"=>"", "commit"=>"ログイン"}
+Completed 500 Internal Server Error in 2ms
+
+Gem::LoadError (bcrypt-ruby is not part of the bundle. Add it to Gemfile.):
+  app/models/user.rb:2:in `<class:User>'
+  app/models/user.rb:1:in `<top (required)>'
+  app/controllers/sessions_controller.rb:11:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.6ms)
+
+
+Started GET "/sessions" for 127.0.0.1 at 2013-02-02 17:25:05 +0900
+Connecting to database specified by database.yml
+Processing by SessionsController#index as HTML
+  Rendered sessions/login.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 58ms (Views: 58.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-02 17:25:06 +0900
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-02 17:25:06 +0900
+Served asset /jquery.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-02 17:25:06 +0900
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 127.0.0.1 at 2013-02-02 17:25:06 +0900
+Served asset /addresses.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-02 17:25:06 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-02 17:25:06 +0900
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 127.0.0.1 at 2013-02-02 17:25:06 +0900
+Served asset /addresses.js - 304 Not Modified (5ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2013-02-02 17:25:09 +0900
+Processing by SessionsController#new as HTML
+  Rendered sessions/_form.html.erb (181.5ms)
+  Rendered sessions/new.html.erb within layouts/application (201.6ms)
+Completed 500 Internal Server Error in 564ms
+
+ActionView::Template::Error (undefined method `account' for #<User:0xb6361508>):
+    14: 
+    15:   <div class="field">
+    16:     <%= f.label :account %><br />
+    17:     <%= f.text_field :account %>
+    18:   </div>
+    19:   <div class="field">
+    20:     <%= f.label :name %><br />
+  app/views/sessions/_form.html.erb:17:in `block in _app_views_sessions__form_html_erb___182104875__619029618'
+  app/views/sessions/_form.html.erb:2:in `_app_views_sessions__form_html_erb___182104875__619029618'
+  app/views/sessions/new.html.erb:3:in `_app_views_sessions_new_html_erb__885396394__620449568'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (15.5ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (39.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2013-02-02 17:25:13 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HU8NEJNcwIpw1Y+X+MEVjOLa6163V7SDK2d3pW0bqc8=", "account"=>"", "pass"=>"", "commit"=>"ログイン"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."u_id" = '' LIMIT 1[0m
+  Rendered sessions/login_failure.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 72ms (Views: 12.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-02 17:25:14 +0900
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 127.0.0.1 at 2013-02-02 17:25:14 +0900
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-02 17:25:14 +0900
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-02 17:25:14 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-02 17:25:14 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-02 17:25:14 +0900
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 127.0.0.1 at 2013-02-02 17:25:14 +0900
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/sessions" for 127.0.0.1 at 2013-02-02 17:25:16 +0900
+Processing by SessionsController#index as HTML
+  Rendered sessions/login.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-02 17:25:16 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-02 17:25:16 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-02 17:25:16 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 127.0.0.1 at 2013-02-02 17:25:16 +0900
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 127.0.0.1 at 2013-02-02 17:25:16 +0900
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-02 17:25:16 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-02 17:25:16 +0900
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2013-02-02 17:25:20 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HU8NEJNcwIpw1Y+X+MEVjOLa6163V7SDK2d3pW0bqc8=", "account"=>"test", "pass"=>"test", "commit"=>"ログイン"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."u_id" = 'test' LIMIT 1
+  Rendered sessions/login_failure.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 61ms (Views: 49.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-02 17:25:20 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 127.0.0.1 at 2013-02-02 17:25:20 +0900
+Served asset /addresses.js - 304 Not Modified (20ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-02 17:25:20 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-02 17:25:20 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-02 17:25:20 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 127.0.0.1 at 2013-02-02 17:25:20 +0900
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-02 17:25:20 +0900
+Served asset /application.js - 304 Not Modified (1ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (222.7ms)[0m  [1mINSERT INTO "rates" ("brate_id", "comment", "created_at", "g_id", "point", "rate_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["brate_id", "b"], ["comment", "aaa"], ["created_at", Sat, 02 Feb 2013 08:31:47 UTC +00:00], ["g_id", "g1"], ["point", 99], ["rate_id", "a"], ["updated_at", Sat, 02 Feb 2013 08:31:47 UTC +00:00]]
+  [1m[35m (18.7ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "rates" ("brate_id", "comment", "created_at", "g_id", "point", "rate_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["brate_id", "c"], ["comment", "iii"], ["created_at", Sat, 02 Feb 2013 08:31:47 UTC +00:00], ["g_id", "g1"], ["point", 88], ["rate_id", "a"], ["updated_at", Sat, 02 Feb 2013 08:31:47 UTC +00:00]]
+  [1m[36m (22.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "rates" ("brate_id", "comment", "created_at", "g_id", "point", "rate_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["brate_id", "a"], ["comment", "uuu"], ["created_at", Sat, 02 Feb 2013 08:31:47 UTC +00:00], ["g_id", "g1"], ["point", 70], ["rate_id", "b"], ["updated_at", Sat, 02 Feb 2013 08:31:47 UTC +00:00]]
+  [1m[35m (18.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "rates" ("brate_id", "comment", "created_at", "g_id", "point", "rate_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["brate_id", "c"], ["comment", "eee"], ["created_at", Sat, 02 Feb 2013 08:31:47 UTC +00:00], ["g_id", "g1"], ["point", 30], ["rate_id", "b"], ["updated_at", Sat, 02 Feb 2013 08:31:47 UTC +00:00]]
+  [1m[36m (12.3ms)[0m  [1mcommit transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.3ms)[0m  [1mINSERT INTO "rates" ("brate_id", "comment", "created_at", "g_id", "point", "rate_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["brate_id", "b"], ["comment", "aaa"], ["created_at", Sat, 02 Feb 2013 08:32:25 UTC +00:00], ["g_id", "g1"], ["point", 99], ["rate_id", "a"], ["updated_at", Sat, 02 Feb 2013 08:32:25 UTC +00:00]]
+  [1m[35m (81.7ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "rates" ("brate_id", "comment", "created_at", "g_id", "point", "rate_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["brate_id", "c"], ["comment", "iii"], ["created_at", Sat, 02 Feb 2013 08:32:25 UTC +00:00], ["g_id", "g1"], ["point", 88], ["rate_id", "a"], ["updated_at", Sat, 02 Feb 2013 08:32:25 UTC +00:00]]
+  [1m[36m (13.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "rates" ("brate_id", "comment", "created_at", "g_id", "point", "rate_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["brate_id", "a"], ["comment", "uuu"], ["created_at", Sat, 02 Feb 2013 08:32:25 UTC +00:00], ["g_id", "g1"], ["point", 70], ["rate_id", "b"], ["updated_at", Sat, 02 Feb 2013 08:32:25 UTC +00:00]]
+  [1m[35m (12.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "rates" ("brate_id", "comment", "created_at", "g_id", "point", "rate_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["brate_id", "c"], ["comment", "eee"], ["created_at", Sat, 02 Feb 2013 08:32:25 UTC +00:00], ["g_id", "g1"], ["point", 30], ["rate_id", "b"], ["updated_at", Sat, 02 Feb 2013 08:32:25 UTC +00:00]]
+  [1m[36m (10.3ms)[0m  [1mcommit transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.6ms)[0m  [1mINSERT INTO "rates" ("brate_id", "comment", "created_at", "g_id", "point", "rate_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["brate_id", "b"], ["comment", "aaa"], ["created_at", Sat, 02 Feb 2013 08:35:42 UTC +00:00], ["g_id", "g1"], ["point", 99], ["rate_id", "a"], ["updated_at", Sat, 02 Feb 2013 08:35:42 UTC +00:00]]
+  [1m[35m (81.3ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "rates" ("brate_id", "comment", "created_at", "g_id", "point", "rate_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["brate_id", "c"], ["comment", "iii"], ["created_at", Sat, 02 Feb 2013 08:35:42 UTC +00:00], ["g_id", "g1"], ["point", 88], ["rate_id", "a"], ["updated_at", Sat, 02 Feb 2013 08:35:42 UTC +00:00]]
+  [1m[36m (16.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "rates" ("brate_id", "comment", "created_at", "g_id", "point", "rate_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["brate_id", "a"], ["comment", "uuu"], ["created_at", Sat, 02 Feb 2013 08:35:42 UTC +00:00], ["g_id", "g1"], ["point", 70], ["rate_id", "b"], ["updated_at", Sat, 02 Feb 2013 08:35:42 UTC +00:00]]
+  [1m[35m (12.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "rates" ("brate_id", "comment", "created_at", "g_id", "point", "rate_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["brate_id", "c"], ["comment", "eee"], ["created_at", Sat, 02 Feb 2013 08:35:42 UTC +00:00], ["g_id", "g1"], ["point", 30], ["rate_id", "b"], ["updated_at", Sat, 02 Feb 2013 08:35:42 UTC +00:00]]
+  [1m[36m (11.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "g_id", "password_digest", "u_id", "u_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 02 Feb 2013 08:35:42 UTC +00:00], ["g_id", "g0"], ["password_digest", "$2a$10$anIw7OQGcYqc85cjlShFtO4gEgi6OC77yyDb5PhedEv/6y7U/xGoa"], ["u_id", "admin"], ["u_name", "ADMIN"], ["updated_at", Sat, 02 Feb 2013 08:35:42 UTC +00:00]]
+  [1m[35m (7.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "g_id", "password_digest", "u_id", "u_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Sat, 02 Feb 2013 08:35:42 UTC +00:00], ["g_id", "g1"], ["password_digest", "$2a$10$aqN1GSRkLH/ci8snZa3y5ufK8GH.EqbmUUlWGwi2IbeXt.tkBqVy2"], ["u_id", "a"], ["u_name", "A"], ["updated_at", Sat, 02 Feb 2013 08:35:42 UTC +00:00]]
+  [1m[36m (9.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("created_at", "g_id", "password_digest", "u_id", "u_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 02 Feb 2013 08:35:42 UTC +00:00], ["g_id", "g1"], ["password_digest", "$2a$10$zNfCUIEgKyXE5MXnRLW3F.gu/xb13sfWipQyZ.5u1btunxYVnoobC"], ["u_id", "b"], ["u_name", "B"], ["updated_at", Sat, 02 Feb 2013 08:35:42 UTC +00:00]]
+  [1m[35m (6.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "g_id", "password_digest", "u_id", "u_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Sat, 02 Feb 2013 08:35:42 UTC +00:00], ["g_id", "g1"], ["password_digest", "$2a$10$gjv7Px5EKugjVbOcTMx2y.fs.glZHwiKtjzeTPKy7YfgVlvH08JNm"], ["u_id", "c"], ["u_name", "C"], ["updated_at", Sat, 02 Feb 2013 08:35:42 UTC +00:00]]
+  [1m[36m (7.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("created_at", "g_id", "password_digest", "u_id", "u_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 02 Feb 2013 08:35:42 UTC +00:00], ["g_id", "g2"], ["password_digest", "$2a$10$QnWHWf4pq2tAxqDLLBWhEub.eEnJZ2KmVCyOnDSc9eFdH.W9IM7Y2"], ["u_id", "d"], ["u_name", "D"], ["updated_at", Sat, 02 Feb 2013 08:35:42 UTC +00:00]]
+  [1m[35m (7.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "groups" ("created_at", "g_id", "g_name", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Sat, 02 Feb 2013 08:35:42 UTC +00:00], ["g_id", "g1"], ["g_name", "Group1"], ["updated_at", Sat, 02 Feb 2013 08:35:42 UTC +00:00]]
+  [1m[36m (7.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "groups" ("created_at", "g_id", "g_name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Sat, 02 Feb 2013 08:35:42 UTC +00:00], ["g_id", "g2"], ["g_name", "Group2"], ["updated_at", Sat, 02 Feb 2013 08:35:42 UTC +00:00]]
+  [1m[35m (7.7ms)[0m  commit transaction

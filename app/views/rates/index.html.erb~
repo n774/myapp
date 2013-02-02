@@ -1,0 +1,29 @@
+<h1>Listing rates</h1>
+
+<table>
+  <tr>
+    <th>Groupid</th>
+    <th>Rateid</th>
+    <th>Brateid</th>
+    <th>Point</th>
+    <th>Comment</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @rates.each do |rate| %>
+  <tr>
+    <td><%= rate.groupid %></td>
+    <td><%= rate.rateid %></td>
+    <td><%= rate.brateid %></td>
+    <td><%= rate.point %></td>
+    <td><%= rate.comment %></td>
+    <td><%= link_to 'Show', rate %></td>
+    <td><%= link_to 'Edit', edit_rate_path(rate) %></td>
+
+  </tr>
+<% end %>
+</table>
+
+<br />

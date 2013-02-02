@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Groupid:</b>
+  <%= @rate.groupid %>
+</p>
+
+<p>
+  <b>Rateid:</b>
+  <%= @rate.rateid %>
+</p>
+
+<p>
+  <b>Brateid:</b>
+  <%= @rate.brateid %>
+</p>
+
+<p>
+  <b>Point:</b>
+  <%= @rate.point %>
+</p>
+
+<p>
+  <b>Comment:</b>
+  <%= @rate.comment %>
+</p>
+
+
+<%= link_to 'Edit', edit_rate_path(@rate) %> |
+<%= link_to 'Back', rates_path %>
