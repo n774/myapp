@@ -14,9 +14,7 @@ class SessionsController < ApplicationController
 
       @login = User.find_by_u_id params[:account]
 
-      cookies[:key] = {
-        :userid => :account,
-        }
+      cookies[:key] = @login
 
   	   respond_to do |format|
 	       format.html {render 'login_success'}

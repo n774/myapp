@@ -3,8 +3,10 @@ class RatesController < ApplicationController
   # GET /rates.json
   def index
     
+    @login = cookies[:key]
+    
     #@rates = Rate.all
-    @rates = Rate.find_all_by_rate_id("a")
+    @rates = Rate.find_all_by_rate_id(@)
     #@rates = Rate.find_all_by_groupid(params["g1"])
 
     respond_to do |format|

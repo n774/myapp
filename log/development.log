@@ -1879,3 +1879,201 @@ Served asset /application.js - 304 Not Modified (6ms)
 
 Started GET "/assets/addresses.js?body=1" for 127.0.0.1 at 2013-02-02 17:53:45 +0900
 Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/rates" for 127.0.0.1 at 2013-02-02 17:59:04 +0900
+Connecting to database specified by database.yml
+Processing by RatesController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `u_id' for nil:NilClass):
+  app/controllers/rates_controller.rb:8:in `index'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.5ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.4ms)
+
+
+Started GET "/rates" for 127.0.0.1 at 2013-02-02 17:59:06 +0900
+Processing by RatesController#index as HTML
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `u_id' for nil:NilClass):
+  app/controllers/rates_controller.rb:8:in `index'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (11.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (28.8ms)
+
+
+Started GET "/sessions/" for 127.0.0.1 at 2013-02-02 17:59:16 +0900
+Processing by SessionsController#index as HTML
+  Rendered sessions/login.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 40ms (Views: 40.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-02 17:59:16 +0900
+Served asset /application.css - 304 Not Modified (60ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 127.0.0.1 at 2013-02-02 17:59:16 +0900
+Served asset /addresses.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 127.0.0.1 at 2013-02-02 17:59:16 +0900
+Served asset /addresses.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-02 17:59:16 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-02 17:59:16 +0900
+Served asset /application.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-02 17:59:16 +0900
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-02 17:59:16 +0900
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2013-02-02 17:59:20 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+o/nMce0Paux8wj3Opc37wCqLR86h6ZMpHFlL8pfz24=", "account"=>"admin", "pass"=>"test", "commit"=>"ログイン"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."u_id" = 'admin' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."u_id" = 'admin' LIMIT 1
+  Rendered sessions/login_success.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 363ms (Views: 18.0ms | ActiveRecord: 26.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-02 17:59:20 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-02 17:59:20 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-02 17:59:20 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-02 17:59:20 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 127.0.0.1 at 2013-02-02 17:59:20 +0900
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-02 17:59:20 +0900
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 127.0.0.1 at 2013-02-02 17:59:20 +0900
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/rates" for 127.0.0.1 at 2013-02-02 17:59:21 +0900
+Processing by RatesController#index as HTML
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `u_id' for "#<User:0xb6288d20>":String):
+  app/controllers/rates_controller.rb:8:in `index'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.7ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/sessions/" for 127.0.0.1 at 2013-02-02 18:04:20 +0900
+Processing by SessionsController#index as HTML
+  Rendered sessions/login.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 20ms (Views: 19.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-02 18:04:20 +0900
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 127.0.0.1 at 2013-02-02 18:04:20 +0900
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-02 18:04:20 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 127.0.0.1 at 2013-02-02 18:04:20 +0900
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-02 18:04:20 +0900
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-02 18:04:20 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-02 18:04:20 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2013-02-02 18:05:43 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+o/nMce0Paux8wj3Opc37wCqLR86h6ZMpHFlL8pfz24=", "account"=>"admin", "pass"=>"test", "commit"=>"ログイン"}
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."u_id" = 'admin' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."u_id" = 'admin' LIMIT 1
+  Rendered sessions/login_success.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 327ms (Views: 40.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-02 18:05:44 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 127.0.0.1 at 2013-02-02 18:05:44 +0900
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-02 18:05:44 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-02 18:05:44 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-02-02 18:05:44 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 127.0.0.1 at 2013-02-02 18:05:44 +0900
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-02 18:05:44 +0900
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/rates" for 127.0.0.1 at 2013-02-02 18:05:59 +0900
+Processing by RatesController#index as HTML
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `u_id' for "#<User:0xb66c4150>":String):
+  app/controllers/rates_controller.rb:8:in `index'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.4ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
