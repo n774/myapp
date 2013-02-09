@@ -3,6 +3,7 @@ class Group < ActiveRecord::Base
 
   validates :g_id, :presence => true
   validates :g_name, :presence => true
+ 
   validates_uniqueness_of :g_id
   validates_uniqueness_of :g_name
 end

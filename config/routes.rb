@@ -1,5 +1,8 @@
 Myapp::Application.routes.draw do
+  get "status/show"
+
   resources :groups
+  resource :status, :only => [:show] 
 
 
   resources :rates, :only => [:index, :edit, :update, :show]

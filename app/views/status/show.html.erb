@@ -1,0 +1,22 @@
+
+<% @page_title ="状況確認" %>
+<h1><%= @page_title %></h1>
+
+<table>
+ <tr>
+  <th width="150">所属グループ</th>
+  <th width="150">氏名</th>
+  <th width="105">入力ステータス</th>
+ </tr>
+<% @groups.each do |groups| %>
+ <tr>
+  <td><%= groups.g_id %></td>
+  <td><%= groups.u_name %></td>
+  <% if groups.point != nil %>
+  <td>入力されています</td>
+  <% else %>
+  <td>入力されていません</td>
+  <% end %>
+ </tr>
+<% end %>
+</table>
