@@ -8,7 +8,6 @@ Myapp::Application.routes.draw do
   resources :groups
   resource :status, :only => [:show] 
 
-  resources :reports
 
   resources :rates, :only => [:index, :edit, :update, :show]
   resources :sessions, :except => ["destroy","update","edit"]

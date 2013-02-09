@@ -1,0 +1,16 @@
+<h1>グループ一覧</h1>
+
+<table>
+  <tr>
+    <th>グループ名</th>
+    <th></th>
+  </tr>
+
+<% @reports.each do |report| %>
+  <tr>
+    <td><%= report.g_name %></td>
+    <td><%= link_to "Show", :controller => "reports", :action =>  "show", :id => report.g_id %></td>
+  </tr>
+<% end %>
+</table>
+

@@ -1,0 +1,20 @@
+<table>
+  <tr>
+    <th>グループ名</th>
+    <th>評価者</th>
+    <th>被評価者</th>
+    <th>点数</th>
+    <th>コメント</th>
+  </tr>
+
+<% @reports.each do |report| %>
+  <tr>
+    <td><%= report.g_name %></td>
+    <td><%= report.rate_name %></td>
+    <td><%= report.brate_name %></td>
+    <td><%= report.point %></td>
+    <td><%= report.comment %></td>
+  </tr>
+<% end %>
+</table>
+
