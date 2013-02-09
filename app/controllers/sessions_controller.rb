@@ -11,6 +11,7 @@ class SessionsController < ApplicationController
     user = User.find_by_u_id params[:account]
     if user && user.authenticate(params[:pass])
       session[:user_id] = user.id
+      session[:user_u_id] = user.u_id
 
       @login = User.find_by_u_id params[:account]
 

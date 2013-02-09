@@ -6,7 +6,7 @@ Myapp::Application.routes.draw do
 
 
   resources :rates, :only => [:index, :edit, :update, :show]
-  resources :sessions, :except=>["destroy","update","edit"]
+  resources :sessions, :except => ["destroy","update","edit"]
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

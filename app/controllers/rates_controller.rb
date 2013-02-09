@@ -6,7 +6,7 @@ class RatesController < ApplicationController
     @login = cookies[:key]
     
     #@rates = Rate.all
-    @rates = Rate.find_all_by_rate_id(@)
+    @rates = Rate.find_all_by_rate_id(session[:user_u_id])
     #@rates = Rate.find_all_by_groupid(params["g1"])
 
     respond_to do |format|
