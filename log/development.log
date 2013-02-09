@@ -2077,3 +2077,5 @@ NoMethodError (undefined method `u_id' for "#<User:0xb66c4150>":String):
   Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.4ms)
 Connecting to database specified by database.yml
 Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml

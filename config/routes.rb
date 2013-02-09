@@ -1,4 +1,7 @@
 Myapp::Application.routes.draw do
+  resources :groups
+
+
   resources :rates, :only => [:index, :edit, :update, :show]
   resources :sessions, :except=>["destroy","update","edit"]
 
