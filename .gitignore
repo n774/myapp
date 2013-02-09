@@ -1,0 +1,25 @@
+# ファイル名が「.cache」で終わるファイルを無視する場合
+*.cache
+ 
+# 特定ディレクトリ配下のファイルはすべて無視する場合
+
+*.rbc
+*.sassc
+.sass-cache
+capybara-*.html
+.rspec
+.rvmrc
+/.bundle
+/vendor/bundle
+/log/*
+/tmp/*
+/db/*.sqlite3
+/public/system/*
+/coverage/
+/spec/tmp/*
+**.orig
+rerun.txt
+pickle-email-*.html
+.project
+
+*~
