@@ -2079,3 +2079,560 @@ Connecting to database specified by database.yml
 Connecting to database specified by database.yml
 Connecting to database specified by database.yml
 Connecting to database specified by database.yml
+
+
+Started GET "/groups" for 192.168.56.1 at 2013-02-09 15:12:49 +0900
+Connecting to database specified by database.yml
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.1ms)[0m  [1mSELECT "groups".* FROM "groups" [0m
+  Rendered groups/index.html.erb within layouts/application (7.7ms)
+Compiled groups.css  (23ms)  (pid 2836)
+Compiled application.css  (30ms)  (pid 2836)
+Compiled jquery.js  (2ms)  (pid 2836)
+Compiled jquery_ujs.js  (0ms)  (pid 2836)
+Compiled groups.js  (209ms)  (pid 2836)
+Compiled application.js  (264ms)  (pid 2836)
+Completed 200 OK in 426ms (Views: 371.8ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/groups.css?body=1" for 192.168.56.1 at 2013-02-09 15:12:50 +0900
+Served asset /groups.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at 2013-02-09 15:12:50 +0900
+Served asset /scaffolds.css - 304 Not Modified (30ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at 2013-02-09 15:12:50 +0900
+Served asset /addresses.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at 2013-02-09 15:12:50 +0900
+Served asset /application.css - 304 Not Modified (17ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at 2013-02-09 15:12:50 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at 2013-02-09 15:12:50 +0900
+Served asset /addresses.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/groups.js?body=1" for 192.168.56.1 at 2013-02-09 15:12:50 +0900
+Served asset /groups.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at 2013-02-09 15:12:50 +0900
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at 2013-02-09 15:12:55 +0900
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/groups" for 192.168.56.1 at 2013-02-09 15:15:55 +0900
+Connecting to database specified by database.yml
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.1ms)[0m  [1mSELECT "groups".* FROM "groups" [0m
+  Rendered groups/index.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 128ms (Views: 87.2ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at 2013-02-09 15:15:56 +0900
+Served asset /addresses.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/groups.css?body=1" for 192.168.56.1 at 2013-02-09 15:15:56 +0900
+Served asset /groups.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at 2013-02-09 15:15:56 +0900
+Served asset /application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at 2013-02-09 15:15:56 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at 2013-02-09 15:15:56 +0900
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at 2013-02-09 15:15:56 +0900
+Served asset /scaffolds.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/groups.js?body=1" for 192.168.56.1 at 2013-02-09 15:15:56 +0900
+Served asset /groups.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at 2013-02-09 15:15:56 +0900
+Served asset /addresses.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at 2013-02-09 15:15:56 +0900
+Served asset /application.js - 304 Not Modified (13ms)
+
+
+Started DELETE "/groups/4" for 192.168.56.1 at 2013-02-09 15:16:03 +0900
+Processing by GroupsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"6LcjXpRcd+R1T1dLkFtn+og5A0UTyr5+Ftq8Wl1y7Dk=", "id"=>"4"}
+  [1m[35mGroup Load (0.3ms)[0m  SELECT "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (8.3ms)[0m  DELETE FROM "groups" WHERE "groups"."id" = ?  [["id", 4]]
+  [1m[36m (16.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://192.168.56.101:3000/groups
+Completed 302 Found in 30ms (ActiveRecord: 24.8ms)
+
+
+Started GET "/groups" for 192.168.56.1 at 2013-02-09 15:16:03 +0900
+Processing by GroupsController#index as HTML
+  [1m[35mGroup Load (0.2ms)[0m  SELECT "groups".* FROM "groups" 
+  Rendered groups/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 44ms (Views: 42.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at 2013-02-09 15:16:03 +0900
+Served asset /application.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at 2013-02-09 15:16:03 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at 2013-02-09 15:16:03 +0900
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at 2013-02-09 15:16:03 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at 2013-02-09 15:16:03 +0900
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/groups.css?body=1" for 192.168.56.1 at 2013-02-09 15:16:03 +0900
+Served asset /groups.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/groups.js?body=1" for 192.168.56.1 at 2013-02-09 15:16:03 +0900
+Served asset /groups.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at 2013-02-09 15:16:03 +0900
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at 2013-02-09 15:16:03 +0900
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started DELETE "/groups/3" for 192.168.56.1 at 2013-02-09 15:16:06 +0900
+Processing by GroupsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"6LcjXpRcd+R1T1dLkFtn+og5A0UTyr5+Ftq8Wl1y7Dk=", "id"=>"3"}
+  [1m[36mGroup Load (0.2ms)[0m  [1mSELECT "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "groups" WHERE "groups"."id" = ?[0m  [["id", 3]]
+  [1m[35m (22.4ms)[0m  commit transaction
+Redirected to http://192.168.56.101:3000/groups
+Completed 302 Found in 30ms (ActiveRecord: 22.9ms)
+
+
+Started DELETE "/groups/3" for 192.168.56.1 at 2013-02-09 15:16:06 +0900
+Processing by GroupsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"6LcjXpRcd+R1T1dLkFtn+og5A0UTyr5+Ftq8Wl1y7Dk=", "id"=>"3"}
+  [1m[36mGroup Load (0.1ms)[0m  [1mSELECT "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Completed 404 Not Found in 1ms
+
+ActiveRecord::RecordNotFound (Couldn't find Group with id=3):
+  app/controllers/groups_controller.rb:75:in `destroy'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.4ms)
+
+
+Started DELETE "/groups/2" for 192.168.56.1 at 2013-02-09 15:16:13 +0900
+Processing by GroupsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"6LcjXpRcd+R1T1dLkFtn+og5A0UTyr5+Ftq8Wl1y7Dk=", "id"=>"2"}
+  [1m[35mGroup Load (0.2ms)[0m  SELECT "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "groups" WHERE "groups"."id" = ?  [["id", 2]]
+  [1m[36m (20.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://192.168.56.101:3000/groups
+Completed 302 Found in 24ms (ActiveRecord: 20.7ms)
+
+
+Started GET "/groups" for 192.168.56.1 at 2013-02-09 15:16:23 +0900
+Processing by GroupsController#index as HTML
+  [1m[35mGroup Load (0.2ms)[0m  SELECT "groups".* FROM "groups" 
+  Rendered groups/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at 2013-02-09 15:16:23 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at 2013-02-09 15:16:23 +0900
+Served asset /addresses.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/groups.css?body=1" for 192.168.56.1 at 2013-02-09 15:16:23 +0900
+Served asset /groups.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at 2013-02-09 15:16:23 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at 2013-02-09 15:16:23 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at 2013-02-09 15:16:23 +0900
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at 2013-02-09 15:16:23 +0900
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at 2013-02-09 15:16:23 +0900
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/groups.js?body=1" for 192.168.56.1 at 2013-02-09 15:16:24 +0900
+Served asset /groups.js - 304 Not Modified (0ms)
+
+
+Started GET "/groups/new" for 192.168.56.1 at 2013-02-09 15:16:27 +0900
+Processing by GroupsController#new as HTML
+  Rendered groups/_form.html.erb (9.2ms)
+  Rendered groups/new.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 24ms (Views: 23.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at 2013-02-09 15:16:27 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at 2013-02-09 15:16:27 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at 2013-02-09 15:16:27 +0900
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at 2013-02-09 15:16:27 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (34ms)
+
+
+Started GET "/assets/groups.css?body=1" for 192.168.56.1 at 2013-02-09 15:16:27 +0900
+Served asset /groups.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at 2013-02-09 15:16:27 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at 2013-02-09 15:16:27 +0900
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at 2013-02-09 15:16:27 +0900
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/groups.js?body=1" for 192.168.56.1 at 2013-02-09 15:16:27 +0900
+Served asset /groups.js - 304 Not Modified (0ms)
+
+
+Started POST "/groups" for 192.168.56.1 at 2013-02-09 15:16:35 +0900
+Processing by GroupsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6LcjXpRcd+R1T1dLkFtn+og5A0UTyr5+Ftq8Wl1y7Dk=", "group"=>{"g_id"=>"g2", "g_name"=>"グループ２"}, "commit"=>"Create Group"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mGroup Exists (0.2ms)[0m  SELECT 1 AS one FROM "groups" WHERE "groups"."g_id" = 'g2' LIMIT 1
+  [1m[36mGroup Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "groups" WHERE "groups"."g_name" = 'グループ２' LIMIT 1[0m
+  [1m[35mSQL (4.7ms)[0m  INSERT INTO "groups" ("created_at", "g_id", "g_name", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Sat, 09 Feb 2013 06:16:35 UTC +00:00], ["g_id", "g2"], ["g_name", "グループ２"], ["updated_at", Sat, 09 Feb 2013 06:16:35 UTC +00:00]]
+  [1m[36m (16.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://192.168.56.101:3000/groups/5
+Completed 302 Found in 48ms (ActiveRecord: 21.0ms)
+
+
+Started GET "/groups/5" for 192.168.56.1 at 2013-02-09 15:16:35 +0900
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mGroup Load (0.2ms)[0m  SELECT "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", "5"]]
+  Rendered groups/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 18ms (Views: 16.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at 2013-02-09 15:16:35 +0900
+Served asset /application.css - 304 Not Modified (55ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at 2013-02-09 15:16:35 +0900
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at 2013-02-09 15:16:35 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/groups.css?body=1" for 192.168.56.1 at 2013-02-09 15:16:35 +0900
+Served asset /groups.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at 2013-02-09 15:16:35 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at 2013-02-09 15:16:35 +0900
+Served asset /addresses.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at 2013-02-09 15:16:35 +0900
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at 2013-02-09 15:16:35 +0900
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/groups.js?body=1" for 192.168.56.1 at 2013-02-09 15:16:35 +0900
+Served asset /groups.js - 304 Not Modified (0ms)
+
+
+Started GET "/groups" for 192.168.56.1 at 2013-02-09 15:16:37 +0900
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.2ms)[0m  [1mSELECT "groups".* FROM "groups" [0m
+  Rendered groups/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at 2013-02-09 15:16:37 +0900
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at 2013-02-09 15:16:37 +0900
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at 2013-02-09 15:16:37 +0900
+Served asset /scaffolds.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at 2013-02-09 15:16:37 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/groups.css?body=1" for 192.168.56.1 at 2013-02-09 15:16:37 +0900
+Served asset /groups.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at 2013-02-09 15:16:37 +0900
+Served asset /addresses.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at 2013-02-09 15:16:37 +0900
+Served asset /addresses.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/groups.js?body=1" for 192.168.56.1 at 2013-02-09 15:16:37 +0900
+Served asset /groups.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at 2013-02-09 15:16:37 +0900
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/groups/new" for 192.168.56.1 at 2013-02-09 15:16:39 +0900
+Processing by GroupsController#new as HTML
+  Rendered groups/_form.html.erb (2.0ms)
+  Rendered groups/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at 2013-02-09 15:16:39 +0900
+Served asset /jquery.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at 2013-02-09 15:16:39 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/groups.css?body=1" for 192.168.56.1 at 2013-02-09 15:16:39 +0900
+Served asset /groups.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at 2013-02-09 15:16:39 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at 2013-02-09 15:16:39 +0900
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at 2013-02-09 15:16:39 +0900
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/groups.js?body=1" for 192.168.56.1 at 2013-02-09 15:16:39 +0900
+Served asset /groups.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at 2013-02-09 15:16:39 +0900
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at 2013-02-09 15:16:39 +0900
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started POST "/groups" for 192.168.56.1 at 2013-02-09 15:16:44 +0900
+Processing by GroupsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6LcjXpRcd+R1T1dLkFtn+og5A0UTyr5+Ftq8Wl1y7Dk=", "group"=>{"g_id"=>"g2", "g_name"=>""}, "commit"=>"Create Group"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mGroup Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "groups" WHERE "groups"."g_id" = 'g2' LIMIT 1[0m
+  [1m[35mGroup Exists (0.1ms)[0m  SELECT 1 AS one FROM "groups" WHERE "groups"."g_name" = '' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  Rendered groups/_form.html.erb (4.5ms)
+  Rendered groups/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 18ms (Views: 13.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at 2013-02-09 15:16:44 +0900
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at 2013-02-09 15:16:44 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at 2013-02-09 15:16:44 +0900
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at 2013-02-09 15:16:44 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/groups.css?body=1" for 192.168.56.1 at 2013-02-09 15:16:44 +0900
+Served asset /groups.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at 2013-02-09 15:16:44 +0900
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/groups.js?body=1" for 192.168.56.1 at 2013-02-09 15:16:44 +0900
+Served asset /groups.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at 2013-02-09 15:16:44 +0900
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at 2013-02-09 15:16:44 +0900
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/groups" for 192.168.56.1 at 2013-02-09 15:16:48 +0900
+Processing by GroupsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6LcjXpRcd+R1T1dLkFtn+og5A0UTyr5+Ftq8Wl1y7Dk=", "group"=>{"g_id"=>"", "g_name"=>""}, "commit"=>"Create Group"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mGroup Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "groups" WHERE "groups"."g_id" = '' LIMIT 1[0m
+  [1m[35mGroup Exists (0.1ms)[0m  SELECT 1 AS one FROM "groups" WHERE "groups"."g_name" = '' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered groups/_form.html.erb (4.4ms)
+  Rendered groups/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 18ms (Views: 13.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at 2013-02-09 15:16:48 +0900
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at 2013-02-09 15:16:48 +0900
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at 2013-02-09 15:16:48 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at 2013-02-09 15:16:48 +0900
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/groups.css?body=1" for 192.168.56.1 at 2013-02-09 15:16:48 +0900
+Served asset /groups.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at 2013-02-09 15:16:48 +0900
+Served asset /addresses.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at 2013-02-09 15:16:48 +0900
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at 2013-02-09 15:16:48 +0900
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/groups.js?body=1" for 192.168.56.1 at 2013-02-09 15:16:48 +0900
+Served asset /groups.js - 304 Not Modified (0ms)
+
+
+Started POST "/groups" for 192.168.56.1 at 2013-02-09 15:16:51 +0900
+Processing by GroupsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6LcjXpRcd+R1T1dLkFtn+og5A0UTyr5+Ftq8Wl1y7Dk=", "group"=>{"g_id"=>"g2", "g_name"=>""}, "commit"=>"Create Group"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mGroup Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "groups" WHERE "groups"."g_id" = 'g2' LIMIT 1[0m
+  [1m[35mGroup Exists (0.2ms)[0m  SELECT 1 AS one FROM "groups" WHERE "groups"."g_name" = '' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered groups/_form.html.erb (5.5ms)
+  Rendered groups/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 26ms (Views: 18.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at 2013-02-09 15:16:52 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at 2013-02-09 15:16:52 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at 2013-02-09 15:16:52 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/groups.css?body=1" for 192.168.56.1 at 2013-02-09 15:16:52 +0900
+Served asset /groups.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at 2013-02-09 15:16:52 +0900
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at 2013-02-09 15:16:52 +0900
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at 2013-02-09 15:16:52 +0900
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at 2013-02-09 15:16:52 +0900
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/groups.js?body=1" for 192.168.56.1 at 2013-02-09 15:16:52 +0900
+Served asset /groups.js - 304 Not Modified (0ms)
