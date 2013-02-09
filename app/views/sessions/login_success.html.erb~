@@ -4,13 +4,14 @@
 </p>
 
 <p>
-先生用（管理者）<br>
-生徒用
+<%= link_to 'グループ管理', groups_path %></br>
+<%= link_to '入力状況', status_path %></br>
+<%= link_to '生徒評価', rates_path %></br>
 </p>
 
 <p>
 name test:
-<%= @login["name"] %>
+<%= @login["g_id"] %>
 </p>
 
-<%= link_to 'ログアウトする', sessions_path, :confirm => 'ログアウトしますか？', :method => :delete %>
+<%= link_to 'ログアウトする', sessions_path, :confirm => 'ログアウトしますか？' %>
