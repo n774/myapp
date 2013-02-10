@@ -1,3 +1,8 @@
+<% content_for :header do %>
+  <%= javascript_include_tag "reports/jquery-1.2.3.min.js" %>
+  <%= javascript_include_tag "reports/jquery.jqchart.js" %>
+<% end %>
+
 <table>
   <tr>
     <th>グループ名</th>
@@ -18,4 +23,36 @@
 <% end %>
 </table>
 
+<% @lists.each do |list| %>
+  <% @id = list.brate_id
+     @rates  = []
+     @points = []
+  %>
+  <% @reports.each do |report| %>
+    <%if list.brate_id == report.brate_id %>
+      <%
+        @rates  << report.rate_name
+        @points << report.point
+      %>
+    <% end %>
+  <% end %>
+
+<%= content_tag(:canvas, 'test', :id => sprintf('report_%s',@id), :height=>"200") %>
+<script type="text/javascript">
+  <%== sprintf("$(function(){$('#report_%s').jQchart(new chartSetting_%s())});",@id,@id) %>
+  function chartSetting_<%=@id%>() {
+    return { config : { type  : 'bar', 
+                        title : '対象：<%=list.brate_name%>さん',
+                        labelX : <%==@rates%>, 
+                        colorSet : ['#A8FF50','#C8BCFF'],
+                        scaleY : {min: 0,max:100,gap:20},
+                      },
+             data : [<%=@points%>]
+            }
+  }
+</script>
+<hr>
+<% end %>
+
+<%= @brate %>
 <%= link_to '戻る', reports_path %>
